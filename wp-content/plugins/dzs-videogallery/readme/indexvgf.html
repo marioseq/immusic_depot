@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="style/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="style/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="style/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="style/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	<!--
+		<h3 class="center alt">&ldquo;Template Name&rdquo; Documentation by &ldquo;Template Author&rdquo; v1.0</h3>
+		<hr>
+		-->
+<h1 class="center">&ldquo;VIDEO / YOUTUBE / VIMEO GALLERY&rdquo; v2</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 1/1/2011<br>
+					By: Digital Zoom Studio<br>
+					Email: <a href="mailto:digitalzoomstudio@gmail.com">digitalzoomstudio@gmail.com</a><br>
+					Support Forum: <a href="http://digitalzoomstudio.net/support/categories/video-youtube-gallery-v2">http://dzs.net/support/</a>
+					<br>
+                    Twitter:   <a href="http://twitter.com/#!/ZoomItFlash">http://twitter.com/#!/ZoomItFlash</a> <br>
+                    Facebook: <a href="http://www.facebook.com/pages/DigitalZoomStudio/135727989818419">http://facebook.com/dzs</a><br>
+                    </strong>
+				</p>
+	    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my component. If you have any questions that are beyond the scope of this help file, please feel free to apply for membership on the forum [ link to the left ] and post a thread about your question after your membership is validated.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#a1">Intro</a></li>
+			<li><a href="#a2">Installation</a></li>
+			<li><a href="#a3">Integrating the component in your html file</a></li>
+			<li><a href="#a4">Integrating the component in your flash project</a></li>
+            <li><a href="#a5">Customising the component</a></li>
+<li><a href="#a6">FAQ</a></li>
+            <li><a href="#a7">Credits</a></li>
+			
+</ol>
+		
+    <hr>
+		
+		<h3 id="a1"><strong>A) Intro</strong> - <a href="#toc">top</a></h3>
+<p>VIDEO / YOUTUBE GALLERY is the ultimate mini gallery for your videos. Its the only gallery that can display YouTube videos and videos from your server in the same container. It can be used as a portfolio or a video showcase. You choose. It is XML driven and only needs a simple text editor to be set up. It can be embedded in html ( just drag and drop with your favorite html editor ), can be used stand-alone and also can be integrated in your flash project very easy ( just drag&drop )</p>
+<h4>Special Thanks</h4> 
+If you want to buy the beautiful videos used in preview you can go to
+  <a href="http://videohive.net/user/Generator/portfolio?sort_by=sales_count&type=files&page=1">http://videohive.net/user/Generator/portfolio?sort_by=sales_count&amp;type=files&amp;page=1</a>
+<hr>
+
+		<h3 id="a2"><strong>B) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<p>All you have to do for installing on your site (ie. yoursite.com) is copy the contents of the <strong>/deploy</strong> folder to a folder(ie. yourfolder) on your site via ftp ( with filezilla ) or any other upload service. You can then access your contents via <a href="http://yoursite.com/yourfolder">http://yoursite.com/yourfolder</a>.</p> 
+
+		
+
+<hr>
+		
+		<h3 id="a3"><strong>C) Integrating the component in your html file</strong> - <a href="#toc">top</a></h3>
+		<h4>Method 1 - no plugins required, simple embed</h4>
+		<p>If you however, want to integrate this in your html page  you need to: </p>
+        <ol>
+        <li> open the <strong>/deploy</strong> folder, copy the folders <strong>/xml</strong> and <strong>preview.swf</strong> into your html folder.</li>
+        <li>open your html file and insert this inside your <strong>&lt;body&gt;</strong> tag where you want the gallery
+          <div class="code">&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;780&quot; height=&quot;420&quot;&gt;<br>
+&lt;param name=&quot;movie&quot; value=&quot;preview.swf&quot; /&gt;<br>
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;<br>
+&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;<br>
+&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;/&gt;<br>
+&lt;!--[if !IE]&gt;--&gt;<br>
+&lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;preview.swf&quot; width=&quot;815&quot; height=&quot;420&quot; allowFullScreen=&quot;true&quot; allowScriptAccess=&quot;always&quot; wmode=&quot;transparent&quot;&gt;<br>
+&lt;!--&lt;![endif]--&gt;<br>
+&lt;p&gt;Alternative content&lt;/p&gt;<br>
+&lt;!--[if !IE]&gt;--&gt;<br>
+&lt;/object&gt;<br>
+&lt;!--&lt;![endif]--&gt;<br>
+&lt;/object&gt;</div>
+        </li>
+	
+      <li>All done!</li>
+        </ol>
+		<h4>Method 2 - swfobject.js required [ comes in the package ]</h4>
+        <ol>
+        <li>open the <strong>/deploy</strong> folder, copy the folders <strong>/js</strong>, <strong>/xml</strong> and <strong>preview.swf </strong>into your html folder</li>
+        <li>open your html file and insert this inside your <strong>&lt;head&gt;</strong> tag
+        <div class="code">&lt;script type=&quot;text/javascript&quot; src=&quot;js/swfobject.js&quot;&gt;&lt;/script&gt;<br>
+          &lt;script type=&quot;text/javascript&quot;&gt;<br>
+var width = 915;<br>
+var height = 360;<br>
+var flashvars = {<br>
+//if you specify a xml file the settings will be read from the xml file<br>
+xml:&quot;xml/gallery.xml&quot;<br>
+};<br>
+var params = {<br>
+menu: &quot;false&quot;,<br>
+allowScriptAccess: &quot;always&quot;,<br>
+scale: &quot;noscale&quot;,<br>
+allowFullScreen: &quot;true&quot;,<br>
+wmode:'transparent'<br>
+};<br>
+var attributes = {};<br>
+swfobject.embedSWF(&quot;preview.swf&quot;, &quot;flashcontent&quot;, width, height, &quot;9.0.0&quot;, &quot;expressInstall.swf&quot;, flashvars, params, attributes);<br>
+&lt;/script&gt;
+        </div>
+        </li>
+	<li>insert this in your <strong>&lt;body&gt;</strong> tag where you want the component to appear 
+	  <div class="code">&lt;div id=&quot;flashcontent&quot;&gt;<br>
+&lt;h1&gt;Alternative content&lt;/h1&gt;<br>
+&lt;p&gt;&lt;a href=&quot;http://www.adobe.com/go/getflashplayer&quot;&gt;&lt;img src=&quot;http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif&quot; alt=&quot;Get Adobe Flash player&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+&lt;/div&gt;</div>
+	  </li>
+      <li>All done!</li>
+        </ol>
+		
+		
+		
+<hr>
+
+<h3 id="a4"><strong>D) Integrating the component in your flash project</strong> - <a href="#toc">top</a></h3>
+<p><ol>
+  <li>copy all the folders from the<strong> /source </strong>folder (ex. /zoom, /caurina) into the folder of your fla</li>
+  <li>open <strong>videogallery.fla, </strong>open the library ( ctrl + L ) and copy all the items from there ( <strong>videogallery</strong> and <strong>/videogallery assets</strong> ) into the library of your fla</li>
+  <li>in your fla, drag <strong>videogallery </strong>from the library to the stage where you want it to appear</li>
+  <li>in videogallery.fla, select the actions layer, open the actions window ( F9 ) and copy the code from there in a layer from your fla</li>
+  <li>all done!</li>
+</ol>
+</p>
+<p>A video of this operation with the older version ( some things may vary ) :</p>
+<p><object width="380" height="280"><param name="movie" value="http://www.youtube.com/v/28A27ToXmAo?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/28A27ToXmAo?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="380" height="280"></embed></object></p>
+<hr>
+<h3 id="a5"><strong>E) Customise It</strong> - <a href="#toc">top</a></h3>
+<h4>Recommended Programs</h4>
+<p>You can generally use any text editing software to edit most content/code, but this is what I recommend:</p>
+<ul>
+<li><strong>.zip </strong>&#8211; Normally you could just right click and extract to a folder of choice [ on both Mac and Windows ]</li>
+<li><strong>.html</strong> -  Notepad++</li>
+<li><strong>.js</strong> - Notepad++</li>
+<li><strong>.as </strong>-  Notepad++</li>
+<li><strong>.fla </strong>- Flash CS5</li>
+<li><strong>.xml</strong> &#8211; Notepad++</li>
+</ul>
+
+	  <p>&nbsp;</p>
+<hr>
+
+
+<h3 id="a6"><strong>F) FAQ</strong> - <a href="#toc">top</a></h3>
+<p>You can check <a href="http://digitalzoomstudio.net/help" target="_blank">this</a> link for a list of popular questions. Other questions you might have:</p>
+<h4>How do I add an item [ from xml ] ?</h4>
+        <p>Access the xml [ default : <strong>deploy/xml/gallery.xml </strong>], and add the bolded lines, remember to change <strong>yourvideo</strong> to your actual video path:</p>
+        <div class="code">
+         &lt;item&gt;<br>
+            &lt;source&gt;video/pages.flv&lt;/source&gt;&lt;!--input here path to the video or video id (if type is vimeo or youtube)--&gt;<br>
+            &lt;thumb&gt;thumbs/slides.jpg&lt;/thumb&gt;&lt;!--thumb that will appear in the menu--&gt;<br>
+            &lt;title&gt;Slides Video&lt;/title&gt;&lt;!--title that will appear in the menu--&gt;<br>
+            &lt;description&gt;&lt;![CDATA[&lt;font size=&quot;20&quot;&gt;cev&lt;/font&gt;&lt;br&gt;&lt;/br&gt;ceva aceva ceva ceva]]&gt;&lt;/description&gt;&lt;!--description that will appear in the video area, leave blank if  you don't want it--&gt;<br>
+            &lt;menuDescription&gt;Something&lt;/menuDescription&gt;&lt;!--description that will appear in the menu--&gt;<br>
+            &lt;type&gt;video&lt;/type&gt;&lt;!--type - youtube/video/vimeo--&gt;<br>
+            &lt;/item&gt;</p>
+          <p><strong>&lt;item&gt;<br>
+          &lt;source&gt;video/yourvideo.flv&lt;/source&gt;<br>
+          &lt;thumb&gt;thumbs/yourthumb.jpg&lt;/thumb&gt;<br>
+          &lt;title&gt;Slides Video&lt;/title&gt;<br>
+          &lt;description&gt;&lt;![CDATA[&lt;font size=&quot;20&quot;&gt;cev&lt;/font&gt;&lt;br&gt;&lt;/br&gt;ceva aceva ceva ceva]]&gt;&lt;/description&gt;<br>
+          &lt;menuDescription&gt;Something&lt;/menuDescription&gt;<br>
+          &lt;type&gt;video&lt;/type&gt;<br>
+          &lt;/item&gt;</strong>
+        </div>
+
+<h4>How do I add an youtube video [ from xml ] ?</h4>
+        <p>Add this to the xml inside the &lt;content&gt;</p>
+        <div class="code">
+          &lt;item&gt;<br>
+&lt;source&gt;<strong>UXLvR6ZaZk4</strong>&lt;/source&gt;<br>
+&lt;title&gt;Slides Video&lt;/title&gt;<br>
+&lt;description&gt;&lt;![CDATA[&lt;font size=&quot;20&quot;&gt;cev&lt;/font&gt;&lt;br&gt;&lt;/br&gt;ceva aceva ceva ceva]]&gt;&lt;/description&gt;<br>
+&lt;menuDescription&gt;Something&lt;/menuDescription&gt;<br>
+&lt;type&gt;<strong>youtube</strong>&lt;/type&gt;<br>
+&lt;/item&gt;</div>
+
+
+<p><em>Offcourse, you need to change the id to fit your desired video.</em></p>
+<h4>What is an youtube ID?</h4>
+<p>Take this movie for example - <a href="http://www.youtube.com/watch?v=UXLvR6ZaZk4">http://www.youtube.com/watch?v=UXLvR6ZaZk4</a> . The youtube ID is just this part: <strong>UXLvR6ZaZk4</strong></p>
+<h4>How do I display a YouTube's user videos [ via FlashVars ] ?</h4>
+        <p>This is a variation of Method 2 of embedding in html</p>
+      <div class="code"> var flashvars = {<br>
+menuPosition:'right',<br>
+youtubeFeed:'on',<br>
+youtubeFeed_user:<strong>'digitalzoomstudio'</strong>,<br>
+} </div>
+
+<h4>How do I add multiple videos [ via FlashVars ] ?</h4>
+        <p>This is a variation of Method 2 of embedding in html</p>
+      <div class="code"> var flashvars = {<br>
+menuPosition:'right',<br>
+videos:'video/test.flv;video/test.flv',<br>
+titles:'video 1;video 2',<br>
+thumbs:'img/1.jpg;img/1.jpg',<br>
+} </div>
+
+        <h4>I want to display a single video [ simple embed, no plugins required ]</h4>
+        <p>This is a variation of Method 1 of embedding in html. You need to edit <strong>video/test.flv</strong> to your video path in both places:</p>
+        <div class="code">&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;780&quot; height=&quot;420&quot;&gt;<br>
+&lt;param name=&quot;movie&quot; value=&quot;preview.swf?video=<strong>video/test.flv</strong>&quot; /&gt;<br>
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;<br>
+&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;<br>
+&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;/&gt;<br>
+&lt;!--[if !IE]&gt;--&gt;<br>
+&lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;preview.swf?video=<strong>video/test.flv</strong>&quot; width=&quot;815&quot; height=&quot;420&quot; allowFullScreen=&quot;true&quot; allowScriptAccess=&quot;always&quot; wmode=&quot;transparent&quot;&gt;<br>
+&lt;!--&lt;![endif]--&gt;<br>
+&lt;p&gt;Alternative content&lt;/p&gt;<br>
+&lt;!--[if !IE]&gt;--&gt;<br>
+&lt;/object&gt;<br>
+&lt;!--&lt;![endif]--&gt;<br>
+&lt;/object&gt;    </div>
+      <h4>How do I make my gallery viewable on the iPhone?</h4>
+        <p>First of all, this only works for the xml feed [ not for videos added via FlashVars ]. This works for all video types - local videos, youtube and vimeo and it will display like seen in the preview, but take notice: the local videos need to be .mp4 as this format is read by both iPhone and Flash Player. Also you need a php enabled server. You have the script in <strong>/example_iphonecompatible</strong>.</p>
+        
+      <h4>How to make one of the icons to actually share on (ie. Facebook)?</h4>
+        <p>You just give this as the link -   <a href="http://www.facebook.com/share.php?u=http://yourlink.html" target="_blank" rel="nofollow">http://www.facebook.com/share.php?u=http://yourlink.html</a>.</p>
+        
+      
+<h4>How to integrate in Wordpress ?</h4>
+        <ol>
+          <li>Copy the content from /deploy in a newfolder named <strong>'videogallery'</strong> the root of your Wordpress install ( so the folder <strong>'videogallery'</strong> is in the same folder as <strong>'wp-content'</strong> )</li>
+        <li>Add this in the post/page you want the component to appear
+          <div class="code">&lt;object width=&quot;640&quot; height=&quot;385&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;<strong>http://yoursite.com/</strong>videogallery/preview.swf&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;param name=&quot;base&quot; value=&quot;<strong>http://yoursite.com/</strong>videogallery/&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;<strong>http://yoursite.com/</strong>videogallery/preview.swf&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;640&quot; height=&quot;385&quot; base=&quot;<strong>http://yoursite.com/</strong>videogallery/&quot;&gt;&lt;/embed&gt;&lt;/object&gt;</div>
+        </li>
+        <li>Replace <strong>yoursite.com</strong> with your site url ( it appears 4 times )</li>
+        <li>All done!</li>
+        </ol>
+        
+        
+<hr>
+        
+<h3 id="a7"><strong>G) Credits</strong> - <a href="#toc">top</a></h3>
+
+		<ul>
+			<li>Generator<a href="http://jquery.com/"></a></li>
+		</ul>
+
+		
+
+<hr>
+		
+<p class="append-bottom alt large"><strong>Digital Zoom Studio</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
